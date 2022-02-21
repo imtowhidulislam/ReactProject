@@ -1,0 +1,27 @@
+.pfw2__brand {
+  //   background-color: rgb(128, 90, 90);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0rem 2rem;
+
+  .skill__container > .icons {
+    // font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    // border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 1rem ;
+    width: 6rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+  .skill__container {
+    // border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // gap: 1rem;
+  }
+}

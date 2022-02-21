@@ -1,0 +1,123 @@
+.pfw2__blog {
+  // background-color: #1b6347;
+
+  .pfw2__blog-title {
+    text-transform: capitalize;
+    font-size: clamp(1.5rem, 7vw, 5rem);
+    margin-bottom: 5rem;
+    line-height: 1.1;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven";
+
+    gap: 1rem;
+    width: 100%;
+
+    // max-width: 90rem;
+    // place-items: center;
+    margin-inline: auto;
+
+    .testimonial:nth-last-child(1) {
+      grid-area: one;
+    }
+    .testimonial:nth-last-child(2) {
+      grid-area: two;
+    }
+    .testimonial:nth-last-child(3) {
+      grid-area: three;
+    }
+    .testimonial:nth-last-child(4) {
+      grid-area: four;
+    }
+    .testimonial:nth-last-child(5) {
+      grid-area: five;
+    }
+    .testimonial:nth-last-child(6) {
+      grid-area: six;
+    }
+    .testimonial:nth-last-child(7) {
+      grid-area: seven;
+    }
+
+    .testimonial {
+      background-color: #2f9483;
+      // max-width: 40rem;
+      &__content-container {
+        padding-inline: 1rem;
+        padding-block: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
+
+        &-title {
+          // color: red;
+          font-size: clamp(0.8rem, 6vw, 1.5rem);
+        }
+        & > :nth-child(odd) {
+          font-size: clamp(0.7rem, 3vw, 1rem);
+        }
+        /* & > :nth-child(3) {
+          font-size: clamp(0.7rem, 3vw, 1rem);
+        } */
+      }
+      &__profile {
+        // height: 100%;
+        max-height: 20rem;
+        width: 100%;
+
+        .image {
+          width: 100%;
+          // height: 12rem;
+          max-height: 13rem;
+
+          // height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  @media (min-width: 38rem) {
+    .grid {
+      // background-color: #1bc5fd;
+      //   padding: 2rem;
+      grid-template-areas:
+        "one one"
+        "two three"
+        "four five"
+        "six five"
+        "seven seven";
+    }
+  }
+  @media (min-width: 50rem) {
+    .grid {
+      // background-color: #88ff19;
+      //   padding: 2rem;
+      grid-template-areas:
+        "one two two two"
+        "four four three three"
+        "five six seven seven";
+    }
+  }
+  @media (min-width: 90rem) {
+    .grid {
+      // background-color: #88ff19;
+      //   padding: 2rem;
+      grid-template-areas:
+        "one two two"
+        "four two two"
+        "three three five"
+        "six seven five";
+    }
+  }
+}

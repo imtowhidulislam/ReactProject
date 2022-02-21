@@ -1,0 +1,22 @@
+:root {
+  --font-family: "poppins";
+  --gradient-text: linear-gradient(
+    78deg,
+    rgb(204, 92, 238) 1.84%,
+    rgb(241, 176, 90)
+  );
+  --gradient-bar: linear-gradient(
+    128deg,
+    rgb(205, 148, 238) 1.84%,
+    rgb(241, 158, 48)
+  );
+  --primary-clr: #fff;
+  --clr-bg: #000000;
+  --clr-footer: #dd3374;
+  --clr-hover: #c016a9;
+  --clr-blog: #095358;
+  --clr-text: #aaff33;
+  --clr-sub-text: #fa8e46;
+
+  --laptop: 49rem;
+}

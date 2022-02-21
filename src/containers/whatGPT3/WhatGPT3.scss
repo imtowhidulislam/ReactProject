@@ -1,0 +1,58 @@
+.pfw2__main__container {
+  background-color: #44232c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  .pfw2__col-col1 {
+    //   border: 2px solid white;
+    //   display: flex;
+    p {
+      // padding-inline: 2rem;
+      margin-block: 1rem;
+    }
+  }
+  .pfw2__col-col3 {
+    // background-color: #44ff66;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 1rem;
+  }
+  .pfw2__col-col2 {
+    //   display: flex;
+    margin-block-end: 2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+  }
+  .pfw2__whatGpt3-title {
+    font-size: clamp(1.5rem, 6vw, 3.5rem);
+    margin-block: 1.5rem;
+  }
+  .line {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 49rem) {
+  .pfw2__col-col1 {
+    display: flex;
+    gap: 3rem;
+  }
+  .pfw2__col-col2 {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+
+    h1 {
+      //   border: 2px solid yellow;
+      max-width: 75%;
+    }
+    h3 {
+      //   max-width: 75%;
+      //   border: 2px solid yellow;
+    }
+  }
+}
